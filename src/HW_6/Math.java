@@ -12,7 +12,6 @@ public class Math {
     //выводим на консоль :
 
         System.out.println(number + " в степени " + power + " = " + result);
-
     }
 
     // Создать метод для возведения в степень числа:
@@ -23,6 +22,4 @@ public class Math {
         }
         return result;
     }
-
-
 }
