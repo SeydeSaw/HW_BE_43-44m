@@ -1,5 +1,6 @@
 package HW_6;
 
+//    1) Создать калькулятор(+, -, *, /) в бесконечном цикле, но считать в функции
 public class Calculator {
 
     public void starCalculations(){
