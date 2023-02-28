@@ -1,4 +1,4 @@
-package HW_3;
+package homeWork.HW_3;
 /*
     30.11.2022
 

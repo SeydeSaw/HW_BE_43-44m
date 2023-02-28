@@ -1,4 +1,4 @@
-package HW_1;
+package homeWork.HW_1;
 
 /*
         28.11.2022

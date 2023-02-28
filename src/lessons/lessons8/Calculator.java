@@ -1,7 +1,10 @@
-package HW_6;
+package lessons.lessons8;
 
-//    1) Создать калькулятор(+, -, *, /) в бесконечном цикле, но считать в функции
 public class Calculator {
+
+//1) Правильно создать сканнер - минус подхода: расход
+// 2) Правильно* передать scanner в метод startCalculations
+
 
     public void starCalculations(){
         while (true){
@@ -11,7 +14,8 @@ public class Calculator {
                     "Умножение: *  \n" +
                     "Деление:   /  \n" +
                     "Выход: +   e  \n" );
-            char ch = CalculatorDemo.sc.next().charAt(0);       // Работаем со статической переменной из класса Main
+            char ch = Main.sc.next().charAt(0);       // Работаем со статической переменной из класса Main
+
 
 
             switch (ch){
@@ -35,32 +39,34 @@ public class Calculator {
                     System.exit(0);    // Выход из программы
                     break;
 
+
+
             }
 
         }
     }
     private void div() {
-        double a = CalculatorDemo.sc.nextDouble();
-        double b = CalculatorDemo.sc.nextDouble();
+        double a = Main.sc.nextDouble();
+        double b = Main.sc.nextDouble();
         System.out.println("Частное: " + a/b);
 
     }
 
     private void mul() {
-        int a = CalculatorDemo.sc.nextInt();
-        int b = CalculatorDemo.sc.nextInt();
+        int a = Main.sc.nextInt();
+        int b = Main.sc.nextInt();
         System.out.println("Произведение: " + a*b);
     }
 
     private void sub() {
-        int a = CalculatorDemo.sc.nextInt();
-        int b = CalculatorDemo.sc.nextInt();
+        int a = Main.sc.nextInt();
+        int b = Main.sc.nextInt();
         System.out.println("Разность: " + (a-b));
     }
 
     private void sum() {
-        int a = CalculatorDemo.sc.nextInt();
-        int b = CalculatorDemo.sc.nextInt();
+        int a = Main.sc.nextInt();
+        int b = Main.sc.nextInt();
         System.out.println("Сумма: " + (a+b));
     }
 }
